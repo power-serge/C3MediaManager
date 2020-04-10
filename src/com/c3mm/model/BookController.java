@@ -1,4 +1,7 @@
 package com.c3mm.model;
+
+import com.c3mm.view.BookView;
+
 public class BookController
 {
 	private BookModel book;

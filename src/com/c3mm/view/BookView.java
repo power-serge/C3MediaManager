@@ -1,4 +1,7 @@
-package com.c3mm.model;
+package com.c3mm.view;
+
+import com.c3mm.model.BookModel;
+
 public class BookView
 {
 	public void printBookInfo(BookModel book)

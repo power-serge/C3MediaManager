@@ -1,13 +1,13 @@
 import com.c3mm.model.BookController;
 import com.c3mm.model.BookModel;
-import com.c3mm.model.BookView;
+import com.c3mm.view.BookView;
 
 public class BookTest
 {
 	public static void main(String[] args)
 	{
 		BookModel book = new BookModel();
-		book.retrieveModelbyISBN("1234567891");
+		book.retrieveModelbyISBN("1234567890");
 		BookView view = new BookView();
 		
 		BookController controller = new BookController(book, view);
