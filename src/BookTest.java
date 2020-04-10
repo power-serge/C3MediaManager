@@ -1,4 +1,4 @@
-import com.c3mm.model.BookController;
+import com.c3mm.controller.BookController;
 import com.c3mm.model.BookModel;
 import com.c3mm.view.BookView;
 
