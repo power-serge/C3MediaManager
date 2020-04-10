@@ -36,6 +36,6 @@ public class BookController
 	
 	public void updateView()
 	{
-		view.printBookInfo(book);
+		view.printBookInfo(book.getResults());
 	}
 }

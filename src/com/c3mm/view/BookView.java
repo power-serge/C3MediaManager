@@ -1,26 +1,22 @@
 package com.c3mm.view;
 
-import com.c3mm.model.BookModel;
+import java.util.HashMap;
 
 public class BookView
 {
-	public void printBookInfo(BookModel book)
+	public void printBookInfo(HashMap<String, String> the_map)
 	{
-		if ( !(book.getRec_id() == 0) )
-		{
-			System.out.println("Book Info");
-			System.out.println("------------------------");
-			System.out.println("title: " + book.getTitle());
-			System.out.println("author: " + book.getAuthor());
-			System.out.println("Published on: " + book.getPubDate());
-			System.out.println("isbn: " + book.getIsbn());
-			System.out.println("status: " + book.getStatus());
-			System.out.println("location: " + book.getLocation());
-			System.out.println();
-		}
-		else
-		{
-			System.out.println("Unable to update view. Please review your given values");
-		}
+		if (the_map.isEmpty())
+			System.out.println("Query returned no results");
+		
+		System.out.println("Book Info");
+		System.out.println("------------------------");
+		System.out.println("Title: " + the_map.get(Columns.TITLE));
+		System.out.println("Author: " + the_map.get(Columns.AUTHOR));
+		System.out.println("Published on: " + the_map.get(Columns.PUBDATE));
+		System.out.println("ISBN: " + the_map.get(Columns.ISBN));
+		System.out.println("Status: " + the_map.get(Columns.STATUS));
+		System.out.println("Location: " + the_map.get(Columns.LOCATION));
+		System.out.println();
 	}
 }
