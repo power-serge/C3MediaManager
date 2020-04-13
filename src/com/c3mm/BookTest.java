@@ -1,8 +1,9 @@
 package com.c3mm;
-import com.c3mm.controller.BookController;
-import com.c3mm.dba.MediaDB;
-import com.c3mm.model.BookModel;
-import com.c3mm.view.BookView;
+
+import com.c3mm.client.controller.BookController;
+import com.c3mm.client.model.BookModel;
+import com.c3mm.client.view.BookView;
+import com.c3mm.server.dba.MediaDB;
 
 public class BookTest
 {

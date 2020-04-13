@@ -1,7 +1,7 @@
-package com.c3mm.controller;
+package com.c3mm.client.controller;
 
-import com.c3mm.model.BookModel;
-import com.c3mm.view.BookView;
+import com.c3mm.client.model.BookModel;
+import com.c3mm.client.view.BookView;
 
 public class BookController
 {

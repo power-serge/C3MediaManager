@@ -1,4 +1,4 @@
-package com.c3mm.dba;
+package com.c3mm.server.dba;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,8 +6,10 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.c3mm.model.BookModel;
-import com.c3mm.view.Columns;
+import com.c3mm.client.model.BookModel;
+import com.c3mm.client.view.Columns;
+
+
 
 public class MediaDB
 	{

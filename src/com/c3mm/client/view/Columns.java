@@ -1,4 +1,4 @@
-package com.c3mm.view;
+package com.c3mm.client.view;
 
 public class Columns
 {
