@@ -10,4 +10,6 @@ public class Columns
 	public final static String STATUS = "STATUS";
 	public final static String ISBN = "ISBN";
 	
+	public final static String[] BOOK_COLS = { REC_ID, TITLE, AUTHOR, LOCATION, PUBDATE, STATUS, ISBN };
+	
 }

@@ -24,7 +24,7 @@ public abstract class AbstractMediaModel
 	 */
 	public AbstractMediaModel()
 	{
-		this.setRec_id(0);
+		this.setRecId(0);
 		this.status = "";
 		this.title = "";
 		this.location = "";
@@ -40,10 +40,10 @@ public abstract class AbstractMediaModel
 	 * @param location
 	 * @param pubDate
 	 */
-	public AbstractMediaModel(int record_id, String status, String author, String title, String location,
+	public AbstractMediaModel(int rec_id, String status, String title, String location,
 			String pubDate)
 	{
-		this.setRec_id(record_id);
+		this.rec_id = rec_id;
 		this.status = status;
 		this.title = title;
 		this.location = location;
@@ -101,12 +101,12 @@ public abstract class AbstractMediaModel
 		return values;
 	}
 	
-	public int getRec_id()
+	public int getRecId()
 	{
 		return rec_id;
 	}
 	
-	public void setRec_id(int rec_id)
+	public void setRecId(int rec_id)
 	{
 		this.rec_id = rec_id;
 	}
@@ -151,8 +151,13 @@ public abstract class AbstractMediaModel
 		this.pubDate = pubDate;
 	}
 
-	public HashMap<String, String> getResults()
+	public HashMap<String, String> getResultMap()
 	{
 		return values;
+	}
+
+	public void setValues(HashMap<String, String> values)
+	{
+		this.values = values;
 	}
 }

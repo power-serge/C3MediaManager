@@ -1,22 +1,21 @@
 package com.c3mm.view;
 
-import java.util.HashMap;
-
 public class BookView
 {
-	public void printBookInfo(HashMap<String, String> the_map)
+	public void printBookInfo(
+			String title, 
+			String author, 
+			String pubDate, 
+			String status, 
+			String location,
+			String isbn)
 	{
-		if (the_map.isEmpty())
-			System.out.println("Query returned no results");
-		
-		System.out.println("Book Info");
-		System.out.println("------------------------");
-		System.out.println("Title: " + the_map.get(Columns.TITLE));
-		System.out.println("Author: " + the_map.get(Columns.AUTHOR));
-		System.out.println("Published on: " + the_map.get(Columns.PUBDATE));
-		System.out.println("ISBN: " + the_map.get(Columns.ISBN));
-		System.out.println("Status: " + the_map.get(Columns.STATUS));
-		System.out.println("Location: " + the_map.get(Columns.LOCATION));
+		System.out.println(Columns.TITLE + ": " + title);
+		System.out.println(Columns.AUTHOR + ": " + author);
+		System.out.println(Columns.PUBDATE + ": " + pubDate);
+		System.out.println(Columns.STATUS + ": " + status);
+		System.out.println(Columns.LOCATION + ": " + location);
+		System.out.println(Columns.ISBN + ": " + isbn);
 		System.out.println();
 	}
 }
